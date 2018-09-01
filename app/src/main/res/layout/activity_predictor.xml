@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@color/bgr"
+            android:gravity="center"
+            android:text="@string/textview"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:layout_marginTop="5dp"
+            android:background="@color/bgr"
+            android:gravity="center"
+            android:text="@string/select_month"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <Spinner
+
+            android:id="@+id/spin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label1"
+            android:layout_marginTop="5dp"
+            android:background="@color/bgr"
+            android:gravity="center">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spin"
+            android:layout_marginTop="5dp"
+            android:background="@color/bgr"
+            android:gravity="center"
+            android:text="@string/select_year"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label2"
+            android:layout_marginTop="5dp"
+            android:background="@color/bgr"
+            android:gravity="center">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spin2"
+            android:layout_marginTop="5dp"
+            android:background="@color/bgr"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label3"
+            android:layout_marginTop="20dp"
+            android:background="@color/bgr"
+            android:gravity="center"
+            android:text="@string/fetch" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center" />
+</FrameLayout>

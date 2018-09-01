@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/templay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:layout_weight="1"
+    android:background="@mipmap/bg"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context="com.example.app.weather.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/temptext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/logout"
+            android:gravity="center"
+            android:text="@string/get_live_temp"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/temptext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/todo"
+            android:src="@mipmap/log" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/des"
+            android:layout_alignStart="@+id/des"
+            android:layout_below="@+id/temptext"
+            android:layout_marginTop="16dp"
+            android:text="@string/weather"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/weather"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/description"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/des"
+            android:layout_alignStart="@+id/des"
+            android:layout_below="@+id/des"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="@string/temperature"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pressure"
+            android:layout_alignStart="@+id/pressure"
+            android:layout_below="@+id/temp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="@string/humidity"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/humidity"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/pressure"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tmp_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/logout"
+            android:layout_alignRight="@+id/logout"
+            android:layout_below="@+id/pressure"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/temp_min"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tmp_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tmp_min"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/temp_max"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wind_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tmp_max"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/wind_speed"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/deg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wind_speed"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/deg"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deg"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/coordinates_lon"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lon"
+            android:layout_alignStart="@+id/lon"
+            android:layout_below="@+id/lon"
+            android:layout_marginTop="9dp"
+            android:text="@string/lat"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_pred_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:background="@null"
+            android:text="@string/pridects_and_views"
+            android:textColor="@color/btn_signup"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

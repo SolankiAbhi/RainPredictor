@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:padding="5dp"
+            tools:context=".RainfallView">
+
+            <TextView
+                android:id="@+id/tview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgr"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/jan"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/tview"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/feb"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/jan"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/march"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/feb"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/april"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/march"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/may"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/april"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/june"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/may"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/july"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/june"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/august"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/july"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/september"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/august"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/october"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/september"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/november"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/october"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/december"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/november"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/annual"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/december"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/jan_feb"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/annual"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/mar_may"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/jan_feb"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/jun_sep"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/mar_may"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/oct_dec"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/jun_sep"
+                android:layout_margin="5dp"
+                android:background="@color/bgr" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center" />
+</FrameLayout>

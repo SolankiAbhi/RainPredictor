@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvAnimalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:text="Year"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/jan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAnimalName"
+                android:gravity="center"
+                android:text="Month of Jan:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/jandata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAnimalName"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/jan"
+                android:layout_toRightOf="@+id/jan"
+                android:gravity="center"
+                android:text="Month of Jan:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/april"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jan"
+                android:gravity="center"
+                android:text="Month of April:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/aprildata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jan"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/jan"
+                android:layout_toRightOf="@+id/jan"
+                android:gravity="center"
+                android:text="Month of April:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/july"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/april"
+                android:gravity="center"
+                android:text="Month of April:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/julydata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/april"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/jan"
+                android:layout_toRightOf="@+id/jan"
+                android:gravity="center"
+                android:text="Month of July:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/oct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/july"
+                android:gravity="center"
+                android:text="Month of Oct:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/octdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/july"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/jan"
+                android:layout_toRightOf="@+id/jan"
+                android:gravity="center"
+                android:text="Month of Oct:"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

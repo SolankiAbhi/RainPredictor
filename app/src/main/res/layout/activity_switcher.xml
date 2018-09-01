@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5sp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tt9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5sp"
+            android:gravity="center"
+            android:text="Views"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="2.5sp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/bgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Rain-Fall"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/bgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Mean-Temp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="2.5sp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/bgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Max-Temp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/bgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Min-Temp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/tt10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Predicts"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:layout_above="@id/tt10"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="2.5sp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/bgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Rain Predictor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/bgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Mean Temp Predictor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="2.5sp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/bgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Max Temp Predictor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/bgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Min Temp Predictor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
